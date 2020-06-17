@@ -1,0 +1,105 @@
+@import '<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">';
+body {
+    background-color: whitesmoke;
+    color: #333333;
+    margin: 0 auto;
+    padding: 0 1em;
+    font-family: 'Open Sans', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 1em;
+    color: whitesmoke;
+}
+
+p {
+    text-align: center;
+}
+
+div p {
+    font-size: 24px;
+}
+
+.profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    border-radius: 20%;
+}
+
+header a {
+    display: inline-flex;
+    text-align: right;
+    color: #888888;
+    justify-content: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px
+}
+header a:hover {
+    background-color: whitesmoke;
+    color: teal;
+}
+
+header {
+    background-color: teal;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+}
+header h1{
+    padding-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid grey;
+    background-color: whitesmoke;
+    width: 40%;
+    margin-right: 10px;
+    padding: 8px;
+}
+
+#message-1 {
+    color: rgb(63, 62, 62);
+    font-size: 1.1em;
+}
+#message-2 {
+    color: rgb(63, 62, 62);
+    font-size: 1.1em;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: whitesmoke;
+    padding: 8px;
+}
+
+
+footer {
+    background-color: teal;
+    color: #888888;
+    margin-top: 1em;
+    padding: 1em 0;    
+}
