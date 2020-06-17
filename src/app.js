@@ -8,6 +8,8 @@ const forecast = require('./utils/forecast');
 
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 //define paths for express
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewPath = path.join(__dirname, '../templates/views')
@@ -76,10 +78,10 @@ app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
         author: 'Olakunle Makanjuola',
-        errorMessage: 'Oops 🤕! Page Not Found, did you miss your way?'    
+        errorMessage: 'Oops 🤕! Page Not Found, you probably missed your way?'    
     })
 });
 
-app.listen(3000, () => {
-    console.log('Server is running on port 3000');
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
 });
